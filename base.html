@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" hrel="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <title>{% block  title %}{% endblock %}   </title>
+    <style>
+        html, body{
+             height: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid" style="min-height:80%">
+         <div class="row">
+              <div class="col-sm-2">
+                   <left><img src="{% static 'images/A.jpg' %}" class="responsive-img" style="max-height:150px"/></left>
+                   <left><img src="{% static 'images/B.jpg' %}" class="responsive-img" style="max-height:150px"/></left>
+              <div>
+              <div class="col-sm-10">
+                   <center><h1>Welcome To Anthem<h1><center>  
+         <div>
+         <div class="row">
+              <div class="col-sm-2">
+                   <div class="bs-slidebar" style="background-color:darkolivegreen">
+                        <ul class="nav flex-cloumn">
+                             <li><a href="/">Selection World 1</a></li>
+                             <li><a href="/chose">Selection World 2</a></li>
+                             <li><a href="/contact">Selection World 3</a></li>
+                             <li><a href="/chose2">Selection World 4</a></li>
+
+                        </ul>
+                   </div>
+              <div class="col-sm-10">
+                   <div class="container-fluid">
+                   Welcome to Other Worldp
+                   {% block content %}
+
+                   {% endblock %}
+                         
+                   </div>
+              </div>
+               </div>
+         </div>
+     <footer>
+          <div class="container-fluid">
+               <a href="#">Facebook</a>|<a href="#">Youtube</a>|<a href="#">FGOOGLE</a>|
+          </div>
+     </footer>
+    </div>
+   
+</html>
