@@ -1,0 +1,25 @@
+body{
+  background-color: #011028;
+  font-family: 'Oswald', sans-serif;
+  color:white;
+  text-align: center;
+  border-color: #92bbfc;
+  border-width: 20px;
+  border-style: solid;
+  margin: 0px;
+}
+p{
+  padding-top: 1%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+form{
+  font-size: 1.2em;
+}
+#submit{
+  background-color: yellow;
+  height: 70px;
+  width: 100px;
+  margin: 4px;
+  border-radius: 35px;fff
+}
